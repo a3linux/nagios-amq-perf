@@ -26,4 +26,18 @@ lists, etc.
 
    -- Ethan Galstad (egalstad@nagios.org)
 
+About Nagios-amq-perf
+-------------------
+This is a small fork from the venilla nagios core, the highlight feature
+of this fork is enable the user posting performance data(Service Check ONLY now) to ActiveMQ for further handling.
 
+To build nagios-amq-perf, you need the libstomp library, which is a simple STOMP library writen in C. It can be downloaded from here, 
+http://svn.codehaus.org/stomp/trunk/c
+Or I will publish the libstomp on github soon.
+
+TODO
+------------------------
+1. Use libstomp++ to enhancement the AtiveMQ support;
+2. Nagios Core upstream integration;
+
+     -- Allen Chen (a3linux@gmail.com)
