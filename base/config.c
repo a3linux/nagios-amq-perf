@@ -1337,6 +1337,8 @@ int read_main_config_file(char *main_config_file) {
 			continue;
 		else if(strstr(input, "precached_object_file=") == input)
 			continue;
+		else if(strstr(input, "perfdata_activemq") == input)
+			continue;
 		else if(!strcmp(variable, "allow_empty_hostgroup_assignment")) {
 			allow_empty_hostgroup_assignment = (atoi(value) > 0) ? TRUE : FALSE;
 			}
